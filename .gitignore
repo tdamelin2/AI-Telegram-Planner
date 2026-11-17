@@ -1,0 +1,44 @@
+# --- Secrets and logins ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Codex keeps its login and session data here; only the shared config and agent files are tracked
+codex_home/*
+!codex_home/config.toml
+!codex_home/agents/
+
+# --- Personal data produced by runs ---
+runs/
+outputs/
+# Your own planning documents; only the example is tracked
+inbox/*
+!inbox/example.md
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editors and OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

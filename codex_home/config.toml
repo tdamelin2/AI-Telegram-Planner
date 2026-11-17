@@ -1,0 +1,16 @@
+# Codex settings used ONLY by this project.
+# run.py points Codex at this folder via the CODEX_HOME environment variable, so your
+# normal ~/.codex setup is never touched. Your Codex login for this project is stored
+# here too (auth.json, created by `python run.py --login-codex`; never commit it).
+
+# Reasoning depth for Forge and Axiom.
+model_reasoning_effort = "high"
+
+# Researchers may look things up on the live web.
+web_search = "live"
+
+[agents]
+enabled = true
+# Each planner has 2 researchers, so at most 2 run at the same time.
+max_concurrent_threads_per_session = 2
+default_subagent_reasoning_effort = "medium"
